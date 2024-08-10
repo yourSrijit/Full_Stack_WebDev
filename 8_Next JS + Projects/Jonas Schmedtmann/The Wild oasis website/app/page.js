@@ -1,5 +1,11 @@
+import Link from "next/link"
+
+
 export default function Page() {
   return (
-   <h1>Hi Srijit</h1>
+    <div>
+     
+     <h1>The Wild Oasis.Welcome to paradice</h1>
+   </div>
   );
 }
