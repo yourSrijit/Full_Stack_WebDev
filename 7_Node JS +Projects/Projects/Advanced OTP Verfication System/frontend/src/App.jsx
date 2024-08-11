@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div className='text-red-600'>App</div>
+    <div className='min-h-screen bg-gradient-to-br from-gray-900 via-green-900 to-emerald-900 flex items-center justify-center relative overflow-hidden'>App</div>
   )
 }
 
