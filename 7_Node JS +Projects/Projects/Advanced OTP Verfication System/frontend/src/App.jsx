@@ -1,8 +1,8 @@
 import FloatingShape from './components/FloatingShape'
 import { Route, Routes } from 'react-router-dom'
-import SignupPage from './pages/SignupPage'
 import LoginPage from './pages/LoginPage'
 import HomePage from './pages/HomePage'
+import SignUpPage from './pages/SignupPage'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/signup' element={<SignupPage/>}/>
+        <Route path='/signup' element={<SignUpPage/>}/>
         <Route path='/login' element={<LoginPage/>}/>
       </Routes>
     </div>
