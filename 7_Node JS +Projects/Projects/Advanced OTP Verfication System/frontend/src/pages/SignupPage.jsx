@@ -4,7 +4,7 @@ import { Loader, Lock, Mail, User } from "lucide-react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PasswordStrengthMeter from "../components/PasswordStrengthMeter";
-import { useAuthStore } from "../store/authStore";
+// import { useAuthStore } from "../store/authStore";
 
 const SignUpPage = () => {
 	const [name, setName] = useState("");
@@ -12,7 +12,8 @@ const SignUpPage = () => {
 	const [password, setPassword] = useState("");
 	const navigate = useNavigate();
 
-	const { signup, error, isLoading } = useAuthStore();
+	// const { signup, error, isLoading } = useAuthStore();  
+	const { signup, error, isLoading } = useState();
 
 	const handleSignUp = async (e) => {
 		e.preventDefault();
