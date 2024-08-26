@@ -19,7 +19,7 @@ export const sendVerificationEmail=async(email,otp)=>{
     html:  VERIFICATION_EMAIL_TEMPLATE.replace("{verificationCode}",otp),
     category: "Email Verification",
   })
-  console.log("Email sent successfully",response);
+  // console.log("Email sent successfully",response);
     }catch(error){
         console.error(`Error sending verification`,error);
         throw new Error(`Error sending verification email: ${error}`)
@@ -43,7 +43,7 @@ export const sendWelcomeEmail=async(email,name)=>{
       company_info_name:"Srijit Bera",
     }
   })
-  console.log("Welcome mail sent successfully",response);
+  // console.log("Welcome mail sent successfully",response); 
     }catch(error){
         console.error(`Error sending welcome mail`,error);
         throw new Error(`Error sending welcome email: ${error}`)
@@ -79,7 +79,7 @@ export const sendResetSuccessEmail=async(email)=>{
   html:PASSWORD_RESET_SUCCESS_TEMPLATE,
   category:"Password successful reset "
 })
-console.log("Password Reset successful");
+// console.log("Password Reset successful"); 
   }catch(error){
       console.error(`Error sending successful mail`,error);
       throw new Error(`Error sending successful email: ${error}`)
