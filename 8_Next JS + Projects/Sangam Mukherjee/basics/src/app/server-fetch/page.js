@@ -1,8 +1,8 @@
 const fetchData=async()=>{
     try{
         const response=await fetch("https://dummyjson.com/users")
-        const data=response.json();
-        return data;
+        const data=await response.json();
+        return data.users;
     }catch(error){
         console.log("Something went wrong");
         
@@ -11,8 +11,7 @@ const fetchData=async()=>{
 
 const Serverfetch=async()=>{
     const data=await fetchData();
-    console.log(data[0]);    
-    
+     
     <div>
         Serverside
         <ui>
