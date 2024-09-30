@@ -17,14 +17,14 @@ function AddNewUser() {
   const [openPopUp,setOpenPopUp]=useState(false);
   const [newUser,setNewUser]=useState(FormInitialState);
   console.log(newUser);
-
+ 
   
   return (
     <div>
         <Button onClick={()=>setOpenPopUp(true) }>Add User</Button>
         <Dialog open={openPopUp} onOpenChange={()=> {
           setOpenPopUp(false)
-          setNewUser("");
+          setNewUser(newUser);
           }}>
           <DialogContent className="sm:max-w-[425px]">
             <DialogHeader>
