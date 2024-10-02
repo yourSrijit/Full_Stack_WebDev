@@ -23,7 +23,7 @@ function AddNewUser() {
     <div>
         <Button onClick={()=>setOpenPopUp(true) }>Add User</Button>
         <Dialog open={openPopUp} onOpenChange={()=> {
-          setOpenPopUp(false)
+          setOpenPopUp(false) 
           setNewUser(newUser);
           }}>
           <DialogContent className="sm:max-w-[425px]">
